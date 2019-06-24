@@ -1,0 +1,326 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Ciutadella","merriweather",sans-serif,"Times New Roman",Times,serif;
+}
+body{
+  background-color: #18181a;
+  color: #fff;
+}
+.downloadByozo{
+  background-color: #0a4cdc;
+  color: #fff;
+  border: none;
+  font-weight: bolder;
+  padding: 1em 2em;
+  border-radius: 2px;
+}
+.downloadByozo:hover{
+  background-color: #053bb1;
+  color: rgb(212, 209, 209);
+}
+header{
+  background-color: #1e1e21;
+  border-bottom: 0.5px rgb(68, 67, 67) solid;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  padding: 1em 0em;
+  display: flex;
+  height: 80px;
+  z-index: 5;
+}
+header svg{
+  margin-left: 7em;
+}
+header nav {
+  width: 60%;
+  margin-left: 2em;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;  
+}
+nav a{
+  margin: auto 20px;
+  text-transform: capitalize;
+  text-decoration: none;
+  font-size: 1rem;
+  color: #d2d2d2; 
+  padding: 0;
+  display: block;
+  max-height: 20px;
+}
+nav a:hover{
+  color: #fff;
+}
+.container{
+  position: absolute;
+  top: 100px;
+  left: 0px;
+  right: 0px;
+}
+#firstSection{
+  width: 70%;
+  margin: 50px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 80px;
+}
+#firstSection .briefText{
+  margin-top: 120px;
+  height: 250px;
+  grid-area: "briefText";
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+#firstSection .briefText p{
+  color: #d2d2d2;
+}
+#firstSection .briefText button{
+  width: 60%;
+  font-size: 1rem;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+#secondSection{
+  width: 70%;
+  margin: 80px auto;
+ }
+ #secondSection .textParagraphs p{
+   margin-top: 2.5rem;
+   width: 800px;
+   font-weight: 500;
+   line-height: 1.375;
+   font-size: 2rem;
+   font-family: "PT serif", serif;
+ }
+ #secondSection button{
+   margin-top: 2.5rem;
+   font-size: 1rem;
+  
+ }
+ #secondSection span{
+   margin-left: 1em;
+ }
+ #thirdSection{
+  width: 70%;
+  margin: 50px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 40px;
+ }
+ #thirdSection .briefText *{
+   margin-bottom: 40px;
+ } 
+ #thirdSection .briefText h1{
+   font-weight: 600;
+   font-size: 2rem;
+   font-family: "PT serif",serif;
+ }
+ #thirdSection .briefText ul{
+   list-style-type: none;
+   font-size: 1.15rem;
+   color: #d2d2d2;
+ }
+ #thirdSection .briefText ul li *,#thirdSection .briefText ul li{
+   margin-bottom: 20px;
+ }
+ #thirdSection .briefText ul li span svg{
+   margin: 0 20px 0 0;
+   color: rgb(25, 206, 176);
+ }
+ #thirdSection .statement blockquote q{
+   font-style: italic;
+   line-height: 2em;
+ }
+ #thirdSection .statement blockquote span{
+   margin-top: 20px;
+   display: block;
+   color: #d2d2d2;
+   font-size: 0.75rem;
+ }
+ #thirdSection .statement{
+   padding-left: 1em;
+   border-left: 2px double rgb(245, 164, 195);
+ }
+ #finalSection{
+   margin: auto;
+   width: 60%;
+ }
+ #finalSection h1{
+   width: 50%;
+   margin: 10px auto;
+   text-align: center;
+   line-height: 3rem;
+   font-weight: 800;
+   font-size: 1.5rem;
+ }
+ #finalSection button{
+   margin: 30px auto;
+   display: block;
+   width: 40%;
+   font-size: 1.1rem;
+ }
+ footer{
+   
+   width: 100%;
+   padding: 2em 0em; 
+ }
+footer ul{
+  margin: auto;
+  display: flex;
+  list-style-type: none;
+  text-align: center;
+  justify-content: center;
+}
+footer ul li a{
+  color: #b3aeae;
+  text-decoration: none;
+  margin: 10px;
+  font-size: 13px;
+}
+footer ul li a:hover{
+  color: rgb(223, 217, 217);
+}
+#downloadPlace{
+  position: fixed;
+  width: 60%;
+  margin: auto;
+  padding: 1em;
+  border: 1px solid #9b9595;
+  left: 0;
+  right: 0;
+  top: 120px;
+  background-color: #1e1e21;
+}
+#downloadPlace > svg {
+  cursor: pointer;
+  text-align: right;
+  margin-left: 95%;
+  
+}
+#downloadPlace h1{
+  text-align: center;
+  font-size: 1.5rem;
+  width: 50%;
+  margin: 30px auto;
+  line-height: 2.5rem;
+}
+#downloadPlace .stores{
+  margin: 40px auto;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+#downloadPlace .stores a{
+  display: block;
+  margin: 10px;
+}
+/*Media query */
+
+@media(max-width : 1000px){
+  #firstSection,#secondSection,#thirdSection{
+    width: 90%;
+  }
+  #thirdSection{
+    grid-template-columns: 2Fr 1Fr;
+  }
+  #thirdSection .briefText ul{width: 100%; margin-right: 0;}
+  #finalSection{width: 80%;}
+  #finalSection img{
+    display: none;
+  }
+  #downloadPlace{
+    width: 80%;
+  }
+}
+@media(max-width : 850px){
+  #secondSection .textParagraphs p{font-size: 1.5rem; width: 80%;}
+}
+@media(max-width : 750px){
+  footer ul{
+    flex-direction: column;
+  }
+  footer ul li{
+    margin-bottom: 25px;
+  }
+  #firstSection, #thirdSection{
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+    justify-content: center;
+    width: 100%;
+    grid-template-areas: 
+    "image"
+    "text";
+  }
+  #firstSection .briefimage,#thirdSection .briefImage{
+    margin: auto;
+    grid-area: image;
+  }
+    #firstSection .briefimage img{
+      max-width: 20rem;
+      margin: auto;
+    }
+    #thirdSection .briefImage img{
+      max-width: 15rem;
+      margin: auto;
+    }
+  #firstSection .briefText,#thirdSection .briefText{
+    width: 70%;
+    text-align: center;
+    margin: auto;
+    grid-area: text;
+  }
+  #thirdSection .briefText{
+    width: 90%;
+    text-align: left;
+  }
+  #firstSection .briefText button{
+    margin: 10px auto;
+  }
+  header .downloadByozo{
+    margin-right: 2em;
+    width: 35%;
+
+  }
+  header svg{
+    margin-left: 2em;
+  }
+  #secondSection .textParagraphs p{font-size: 1.5rem; width: 100%;}
+  #secondSection span{display: none;}
+  #finalSection{
+    width: 100%;
+  }
+  #finalSection h1, #finalSection button{
+    width: 80%;
+  }
+  #downloadPlace h1{
+    width: 90%;
+  }
+  @media(max-width : 450px){
+    header{
+      justify-content: space-between;
+    }
+    header svg{margin-left: 0em;}
+    header nav{display: none;}
+    header .downloadByozo{width: 50%;}
+    #downloadPlace{
+      width: 100%;
+      top: 0;
+      z-index: 10;
+    }
+    #downloadPlace .stores{
+      flex-direction: column;
+    }
+    #downloadPlace .stores a{
+      width: 135px;
+    }
+    #downloadPlace .stores a img{
+      width: 100%;
+    }
+  }
+  
+
+}
