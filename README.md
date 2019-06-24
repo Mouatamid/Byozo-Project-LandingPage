@@ -1,2 +1,4 @@
 # Byozo-Project-LandingPage
-A landing page for Byozo Project
+A Responsive landing page for Byozo Project with HTML5/CSS3/JQUERY
+
+The Original Website : https://www.byozo.com/
